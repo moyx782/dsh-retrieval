@@ -1,0 +1,3 @@
+- insert:
+    - id: retrieval
+      name: '@local/dsh-retrieval'

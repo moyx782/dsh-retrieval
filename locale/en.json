@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Web retrieval",
+    "description": "Reads a page the free way first — the site's own API, then static extraction, then a reader service, then a real browser — and reports which layer answered, what robots.txt allowed, and what it skipped.",
+    "detail": "docs/DETAIL.md"
+  }
+}

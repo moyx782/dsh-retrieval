@@ -1,0 +1,105 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #16181d;
+  --muted: #5b6472;
+  --border: #d5dae1;
+  --accent: #1c6ef2;
+  --accent-fg: #ffffff;
+  --field: #f7f8fa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1e24;
+    --fg: #e8eaed;
+    --muted: #a2a9b4;
+    --border: #363b44;
+    --accent: #4c8dff;
+    --accent-fg: #0d1117;
+    --field: #23272f;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  width: 340px;
+  margin: 0;
+  padding: 12px 14px 14px;
+  background: var(--bg);
+  color: var(--fg);
+  font: 12.5px/1.5 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+}
+
+.head { margin-bottom: 10px; }
+.title { font-size: 13px; font-weight: 600; }
+.host { color: var(--muted); font-size: 12px; margin-top: 2px; word-break: break-all; }
+
+.row { display: block; margin: 0 0 10px; }
+.row.check { display: flex; align-items: center; gap: 7px; color: var(--muted); }
+.label { display: block; color: var(--muted); margin-bottom: 4px; }
+
+textarea, input[type="text"] {
+  width: 100%;
+  padding: 7px 9px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--field);
+  color: var(--fg);
+  font: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  line-height: 1.45;
+  resize: vertical;
+}
+
+textarea:focus, input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.buttons { display: flex; gap: 8px; }
+
+button {
+  flex: 1;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: transparent;
+  color: var(--fg);
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) { border-color: var(--accent); }
+button:disabled { opacity: .5; cursor: default; }
+
+button.primary {
+  border-color: transparent;
+  background: var(--accent);
+  color: var(--accent-fg);
+  font-weight: 600;
+}
+
+details { color: var(--muted); }
+summary { cursor: pointer; }
+details input { margin-top: 6px; }
+
+.status {
+  min-height: 16px;
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.status.error { color: #c0392b; }
+.status.ok { color: #16794a; }
+
+.foot {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}

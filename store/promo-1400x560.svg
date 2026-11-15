@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560">
+  <rect width="1400" height="560" fill="#0d1420"/>
+  <circle cx="1140" cy="120" r="220" fill="#13203a"/>
+  <circle cx="180" cy="500" r="180" fill="#101b2d"/>
+  <rect x="96" y="120" width="112" height="112" rx="26" fill="#1b2436"/>
+  <rect x="118" y="142" width="46" height="68" rx="9" fill="#e6edf6"/>
+  <path d="M128 158h26M128 170h26M128 182h14" stroke="#101826" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="166" cy="190" r="17" fill="none" stroke="#4cc2ff" stroke-width="7"/>
+  <path d="M178 202l14 14" stroke="#4cc2ff" stroke-width="7" stroke-linecap="round"/>
+  <text x="248" y="180" fill="#f2f6fc" font-family="Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="46" font-weight="600">网页检索 Cookie 助手</text>
+  <text x="250" y="236" fill="#93a7c1" font-family="Noto Sans CJK SC, sans-serif" font-size="24">当前标签页的 Cookie，一键交给 DSH 的「网页检索」面板</text>
+  <rect x="96" y="330" width="1208" height="150" rx="18" fill="#141d2c" stroke="#243349"/>
+  <text x="132" y="382" fill="#cfe0f5" font-family="ui-monospace, monospace" font-size="20">Cookie: session_id=6f1c…; csrf=9a2e…</text>
+  <rect x="132" y="404" width="150" height="40" rx="10" fill="#4cc2ff"/>
+  <text x="160" y="431" fill="#0b1220" font-family="Noto Sans CJK SC, sans-serif" font-size="18" font-weight="600">发送到面板</text>
+  <text x="300" y="431" fill="#93a7c1" font-family="Noto Sans CJK SC, sans-serif" font-size="18">仍需你确认范围后才会保存</text>
+</svg>

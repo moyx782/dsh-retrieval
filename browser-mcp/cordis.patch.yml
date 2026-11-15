@@ -1,0 +1,22 @@
+# Playwright's MCP browser server, as a DSH plugin row.
+#
+# Portable defaults: the server is taken from PATH (`npm i -g @playwright/mcp`)
+# and keeps no profile, so a fresh browser starts each session. To keep
+# sign-ins between sessions, add a persistent profile directory:
+#
+#   - --user-data-dir=/home/<you>/.cache/dsh-retrieval/playwright-mcp
+#
+# If the machine has no Chrome channel installed, point at a Chromium build:
+#
+#   - --executable-path=/path/to/chrome
+- insert:
+    - id: browser-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: playwright
+        transport: stdio
+        command: playwright-mcp
+        args:
+          - --headless
+          - --viewport-size=1280,860
+        failOnStartupError: false

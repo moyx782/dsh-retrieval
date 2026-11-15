@@ -1,0 +1,13 @@
+{
+  "name": "@local/dsh-browser-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Playwright's MCP browser server, wired into DSH so the model can navigate, snapshot and click real pages, including ones behind a sign-in.",
+  "exports": {
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["cordis.patch.yml", "locale/*.json", "docs", "icon.svg", "README.md"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

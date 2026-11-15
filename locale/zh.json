@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "网页检索",
+    "description": "从免费的路子开始读一个页面：站点自己的 API、静态抽取、reader 服务、真浏览器逐级降级，并说明是哪一层给出了内容、robots.txt 允许了什么、跳过了什么。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

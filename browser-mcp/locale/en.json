@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Browser control (Playwright MCP)",
+    "description": "Runs Playwright's MCP browser server so the model can navigate, snapshot, click and read real pages — including pages behind a sign-in, once you sign in in the browser window it opens.",
+    "detail": "docs/DETAIL.md"
+  }
+}

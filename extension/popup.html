@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <title>Cookie → DSH 网页检索</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="head">
+    <div class="title">Cookie → 网页检索</div>
+    <div class="host" id="host">—</div>
+  </header>
+
+  <label class="row check">
+    <input type="checkbox" id="exclude" checked>
+    <span>排除统计/广告 cookie</span>
+  </label>
+
+  <label class="row">
+    <span class="label">Cookie 头</span>
+    <textarea id="header" rows="6" spellcheck="false" placeholder="这个标签页没有可用的 cookie"></textarea>
+  </label>
+
+  <div class="row buttons">
+    <button id="copy" class="primary" type="button">复制</button>
+    <button id="send" type="button">发送到 DSH 面板</button>
+  </div>
+
+  <details class="row">
+    <summary>DSH 面板地址</summary>
+    <input id="base" type="text" spellcheck="false" placeholder="http://192.168.1.19:3080">
+  </details>
+
+  <p id="status" class="status" role="status"></p>
+  <p class="foot">值只在本机流转，插件不发起任何网络请求。发送后面板会预填域名和值，仍需你勾选确认才会保存。</p>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

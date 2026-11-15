@@ -1,0 +1,13 @@
+# Build outputs (regenerate with `node store/build.mjs`)
+dsh-retrieval-cookie-helper.zip
+dsh-retrieval-cookie-helper.xpi
+dsh-retrieval-cookie-helper.crx
+dsh-retrieval-cookie-helper.pem
+store/upload-*.zip
+store/.build-*/
+
+# Local tooling
+node_modules/
+.playwright-mcp/
+.DS_Store
+*.log

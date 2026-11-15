@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "浏览器控制（Playwright MCP）",
+    "description": "接入 Playwright 官方的 MCP 浏览器服务，让模型能打开、快照、点击和阅读真实页面；在它打开的浏览器窗口里登录一次，之后就能读到需要登录的页面。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}
